@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Proyecto Marco</string>
+    <string name="marco_mes">MES</string>
+    <string name="marco_periodo">PERIODO</string>
+</resources>
