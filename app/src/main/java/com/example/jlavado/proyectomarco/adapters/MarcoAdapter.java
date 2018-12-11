@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.example.jlavado.proyectomarco.Marco;
+import com.example.jlavado.proyectomarco.Modelo.Marco;
 import com.example.jlavado.proyectomarco.R;
 
 import java.util.ArrayList;

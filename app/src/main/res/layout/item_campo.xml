@@ -10,14 +10,12 @@
         android:id="@+id/txt_item1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
         tools:layout_editor_absoluteX="401dp"
         tools:layout_editor_absoluteY="116dp" />
     <TextView
         android:id="@+id/txt_item2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
         tools:layout_editor_absoluteX="401dp"
         tools:layout_editor_absoluteY="116dp" />
 

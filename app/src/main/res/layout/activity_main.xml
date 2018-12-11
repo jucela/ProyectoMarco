@@ -52,7 +52,7 @@
                             android:layout_margin="1dp"
                             android:layout_height="@dimen/altura_spinner">
                             <Spinner
-                                android:id="@+id/marco_sp_anio"
+                                android:id="@+id/sp_filtro1"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"/>
                         </android.support.v7.widget.CardView>
@@ -72,7 +72,7 @@
                             android:layout_margin="1dp"
                             android:layout_height="@dimen/altura_spinner">
                             <Spinner
-                                android:id="@+id/marco_sp_mes"
+                                android:id="@+id/sp_filtro2"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"/>
                         </android.support.v7.widget.CardView>
@@ -99,7 +99,7 @@
                             android:layout_margin="1dp"
                             android:layout_height="@dimen/altura_spinner">
                             <Spinner
-                                android:id="@+id/marco_sp_periodo"
+                                android:id="@+id/sp_filtro3"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"/>
                         </android.support.v7.widget.CardView>
@@ -119,7 +119,7 @@
                             android:layout_margin="1dp"
                             android:layout_height="@dimen/altura_spinner">
                             <Spinner
-                                android:id="@+id/marco_sp_zona"
+                                android:id="@+id/sp_filtro4"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"/>
                         </android.support.v7.widget.CardView>
@@ -222,8 +222,13 @@
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/recycler_campos"
                 android:layout_width="match_parent"
-                android:layout_height="220dp"
+                android:layout_height="11dp"
                 android:scrollbars="vertical" />
+
+            <ListView
+                android:id="@+id/list_item"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
 
 
         </LinearLayout>
