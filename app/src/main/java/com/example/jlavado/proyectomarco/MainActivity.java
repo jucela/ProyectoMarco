@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.example.jlavado.proyectomarco.adapters.DataCamposAdapter;
 import com.example.jlavado.proyectomarco.adapters.MarcoAdapter;
 
 import java.util.ArrayList;
@@ -16,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
     private MarcoAdapter marcoAdapter;
     private ArrayList<Marco> itemMarcos;
+    private DataCamposAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,16 +31,17 @@ public class MainActivity extends AppCompatActivity {
 //        listView.setAdapter(adapter);
 
         recyclerView = (RecyclerView) findViewById(R.id.recycler_campos);
+        adapter= new DataCamposAdapter(Marco.getMarcos());
         recyclerView.setAdapter(adapter);
 
-        public void setearAdapter(){
-            marcoAdapter = new MarcoAdapter(itemMarcos, new MarcoAdapter.OnItemClickListener() {
-                @Override
-                public void onItemClick(View view, int position) {
-                }
-            });
-            recyclerView.setAdapter(marcoAdapter);
-        }
+//        public void setearAdapter(){
+//            marcoAdapter = new MarcoAdapter(itemMarcos, new MarcoAdapter.OnItemClickListener() {
+//                @Override
+//                public void onItemClick(View view, int position) {
+//                }
+//            });
+//            recyclerView.setAdapter(marcoAdapter);
+//        }
 
     }
 }

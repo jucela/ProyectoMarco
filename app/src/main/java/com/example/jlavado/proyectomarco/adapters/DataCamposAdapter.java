@@ -16,10 +16,10 @@ import java.util.ArrayList;
 
 public class DataCamposAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     Context myContext;
-    private ArrayAdapter<Marco> mydata;
+    private ArrayList<Marco> myData;
 
-    public DataCamposAdapter(ArrayAdapter<Marco> data)
-    { mydata= data;}
+    public DataCamposAdapter(ArrayList<Marco> Data)
+    { myData= Data;}
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
        View view =LayoutInflater.from(parent.getContext()).inflate(R.layout.item_campo,parent,false);
@@ -30,12 +30,12 @@ public class DataCamposAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
 
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
-        holder.itemView.setTextDirection(mydata);
+        holder.itemView.setTextDirection(myData.indexOf(position));
     }
 
     @Override
     public int getItemCount() {
-        return getItemCount();
+        return 0;
     }
 
     public  static class ViewHolder extends RecyclerView.ViewHolder{

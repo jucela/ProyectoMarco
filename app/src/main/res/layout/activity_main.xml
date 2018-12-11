@@ -222,13 +222,10 @@
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/recycler_campos"
                 android:layout_width="match_parent"
-                android:layout_height="20dp"
+                android:layout_height="220dp"
                 android:scrollbars="vertical" />
 
-            <ListView
-                android:id="@+id/list_item"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>
