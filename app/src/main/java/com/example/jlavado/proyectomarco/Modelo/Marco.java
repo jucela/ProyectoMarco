@@ -74,8 +74,11 @@ public class Marco {
         return campo10;
     }
 
-    public  String toString ()
-    { return  this.campo1+"-"+this.campo2+"-"+this.campo3+"-"+this.campo4+"-"+this.campo5+"-"+this.campo6+"-"+this.campo7;}
+//    public  String toString ()
+//    { return  this.campo1+"-"+this.campo2+"-"+this.campo3+"-"+this.campo4+"-"+this.campo5+"-"+this.campo6+"-"+this.campo7;}
+     public  String toString ()
+     { return  this.campo1;}
+
 
 
     public static ArrayList<Marco> getMarcos(){

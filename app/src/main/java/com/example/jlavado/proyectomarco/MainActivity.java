@@ -27,9 +27,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ArrayAdapter<Marco> adapter = new ArrayAdapter<Marco>(this,R.layout.item_campo,R.id.txt_item1,Marco.getMarcos());
-        ListView listView = (ListView) findViewById(R.id.list_item);
-        listView.setAdapter(adapter);
+//        ArrayAdapter<Marco> adapter = new ArrayAdapter<Marco>(this,R.layout.item_campo,R.id.txt_item1,Marco.getMarcos());
+//        ListView listView = (ListView) findViewById(R.id.list_item);
+//        listView.setAdapter(adapter);
 
 //        ArrayAdapter<MarcoFiltro> adapterSp1 = new ArrayAdapter<MarcoFiltro>(this,R.layout.item_campo,R.id.txt_item1,MarcoFiltro.getConfigFiltro());
 ////        Spinner spinner = (Spinner) findViewById(R.id.sp_filtro1);
@@ -48,17 +48,19 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void procesarFiltro1(ArrayList<MarcoFiltro> datos) {
-        String x = String.valueOf(datos.get(0).getPosicion());
-        Toast.makeText(MainActivity.this, "valor:" + x, Toast.LENGTH_SHORT).show();
+
+        String filtros = String.valueOf(datos.get(0).getPosicion());
+        Toast.makeText(MainActivity.this, "valor:" + filtros, Toast.LENGTH_SHORT).show();
         //itemMarcos = new ArrayList<Marco>();
 
 
-        if (x.equals("1")) {
-             ArrayAdapter<MarcoFiltro> adapterSp1 = new ArrayAdapter<MarcoFiltro>(this,R.layout.item_campo,R.id.txt_item1,datos);
+        if (filtros.equals("1")) {
+             ArrayList<Marco> marcos =new ArrayList<Marco>(Marco.getMarcos());
+             ArrayAdapter<Marco> adapterSp1 = new ArrayAdapter<Marco>(this,R.layout.item_campo,R.id.txt_item1,marcos.g);
              Spinner spinner = (Spinner) findViewById(R.id.sp_filtro1);
              spinner.setAdapter(adapterSp1);
         }
-        else {Toast.makeText(MainActivity.this, "valor:" + datos.get(1), Toast.LENGTH_SHORT).show();}
+        else {Toast.makeText(MainActivity.this, "valor:ERROR" , Toast.LENGTH_SHORT).show();}
     }
 
 }
